@@ -31,13 +31,13 @@ struct Repository: JSONDecodable {
             throw JSONDecodeError.missingValue(key: "fullName", actualValue: dictionaly["fullName"])
         }
         
-        guard let owner = dictionaly["owner"] else {
+        guard let ownerObject = dictionaly["owner"] else {
             throw JSONDecodeError.missingValue(key: "owner", actualValue: dictionaly["owner"])
         }
         
         self.id = id
         self.name = name
         self.fullName = fullName
-        self.owner = owner
+        self.owner = try User(json: ownerObject)
     }
 }

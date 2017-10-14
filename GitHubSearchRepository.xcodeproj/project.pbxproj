@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3139F20E1F91DBB900785045 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139F20D1F91DBB900785045 /* main.swift */; };
+		3139F2151F91DC1A00785045 /* hoge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139F2141F91DC1A00785045 /* hoge.swift */; };
+		3139F2181F91E11600785045 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139F2171F91E11600785045 /* User.swift */; };
+		3139F21A1F91E14000785045 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139F2191F91E14000785045 /* Repository.swift */; };
+		3139F21C1F91F65900785045 /* JSONDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139F21B1F91F65900785045 /* JSONDecodeError.swift */; };
+		3139F21E1F91FD0100785045 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139F21D1F91FD0100785045 /* JSONDecodable.swift */; };
+		3139F2201F92013800785045 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139F21F1F92013800785045 /* SearchResponse.swift */; };
+		3139F2221F921D1500785045 /* GithubClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139F2211F921D1500785045 /* GithubClientError.swift */; };
+		3139F2241F921FB500785045 /* GithubAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3139F2231F921FB500785045 /* GithubAPIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,14 @@
 /* Begin PBXFileReference section */
 		3139F20A1F91DBB900785045 /* GitHubSearchRepository */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GitHubSearchRepository; sourceTree = BUILT_PRODUCTS_DIR; };
 		3139F20D1F91DBB900785045 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3139F2141F91DC1A00785045 /* hoge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoge.swift; sourceTree = "<group>"; };
+		3139F2171F91E11600785045 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3139F2191F91E14000785045 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		3139F21B1F91F65900785045 /* JSONDecodeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodeError.swift; sourceTree = "<group>"; };
+		3139F21D1F91FD0100785045 /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		3139F21F1F92013800785045 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		3139F2211F921D1500785045 /* GithubClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClientError.swift; sourceTree = "<group>"; };
+		3139F2231F921FB500785045 /* GithubAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +73,25 @@
 		3139F20C1F91DBB900785045 /* GitHubSearchRepository */ = {
 			isa = PBXGroup;
 			children = (
+				3139F2161F91E0E800785045 /* Response */,
 				3139F20D1F91DBB900785045 /* main.swift */,
+				3139F2141F91DC1A00785045 /* hoge.swift */,
 			);
 			path = GitHubSearchRepository;
+			sourceTree = "<group>";
+		};
+		3139F2161F91E0E800785045 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				3139F2171F91E11600785045 /* User.swift */,
+				3139F21D1F91FD0100785045 /* JSONDecodable.swift */,
+				3139F2191F91E14000785045 /* Repository.swift */,
+				3139F21B1F91F65900785045 /* JSONDecodeError.swift */,
+				3139F21F1F92013800785045 /* SearchResponse.swift */,
+				3139F2211F921D1500785045 /* GithubClientError.swift */,
+				3139F2231F921FB500785045 /* GithubAPIError.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +152,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3139F2201F92013800785045 /* SearchResponse.swift in Sources */,
+				3139F2151F91DC1A00785045 /* hoge.swift in Sources */,
+				3139F2241F921FB500785045 /* GithubAPIError.swift in Sources */,
 				3139F20E1F91DBB900785045 /* main.swift in Sources */,
+				3139F2181F91E11600785045 /* User.swift in Sources */,
+				3139F21E1F91FD0100785045 /* JSONDecodable.swift in Sources */,
+				3139F21A1F91E14000785045 /* Repository.swift in Sources */,
+				3139F2221F921D1500785045 /* GithubClientError.swift in Sources */,
+				3139F21C1F91F65900785045 /* JSONDecodeError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
