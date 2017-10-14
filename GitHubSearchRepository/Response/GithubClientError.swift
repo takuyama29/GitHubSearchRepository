@@ -8,13 +8,15 @@
 
 import Foundation
 
-enum GithubClienrError: Error {
+enum GithubClientError: Error {
     // 通信に失敗したケース
     case connectionError(Error)
     
-    // レポポンスの解釈に失敗したケース
+    // レスポンスの解釈に失敗したケース
     case responseParseError(Error)
     
     // APIからエラーレスポンスを受け取ったケース
-    case apiError(GithubClienrError)
+    case apiError(Error)
+    // FIXME
+    // case apiError(GithubAPIError)
 }
