@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct User { // JSONを受け取ってユーザー情報をインスタンス化するための型
+struct User: JSONDecodable { // JSONを受け取ってユーザー情報をインスタンス化するための型
     let id: Int
     let login: String
     
     // JSONのフォーマットに合わせてイニシャライズする
     init(json: Any) throws { // JSONが意図しないフォーマットになった場合に例外が発生しうるのでthrow文を使う
         guard let dictionaly = json as? [String :  Any] else {
-            throw JSONDecodeError.invalidFormat(json: json)
+            throw JSONDecodeError.invalidFormat(json: json) // thowキーワードの後にはError型に準拠した関数を実行する
         }
         guard let id = dictionaly["id"] as? Int else {
             throw JSONDecodeError.missingValue(
